@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="37.176" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Dashboard screen" name="To test the model execution" time="36.924">
+<failure/>
+<system-out><![CDATA[
+And Click on the batch scroing button.......................................undefined
+And Click on upload batch...................................................skipped
+And Upload the files........................................................skipped
+And click on submit button..................................................skipped
+And click on Ok button in success popup.....................................skipped
+And click on preprocess button..............................................skipped
+And click on ok  button in preprocess popup.................................skipped
+And click on validate button................................................skipped
+When click on ok button in validate popup...................................skipped
+Then Click on Quote model ready button......................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
