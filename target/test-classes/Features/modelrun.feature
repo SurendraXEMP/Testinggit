@@ -2,10 +2,10 @@ Feature: Dashboard screen
 
   @smoke
   Scenario: To test the model execution
+    And login into the portal
     And Click on the batch scroing button
     And Click on upload batch
     And Upload the files
-    And click on submit button
     And click on submit button
     And click on Ok button in success popup
     And click on preprocess button

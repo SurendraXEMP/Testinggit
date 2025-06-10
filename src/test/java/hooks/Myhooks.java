@@ -29,6 +29,11 @@ public class Myhooks extends Driverinstance{
 		System.out.println(driver.getCurrentUrl());
 	}
 	
+	@Before(order = 2)
+	public void logincred() {
+		
+		
+	}
 	
 	@Before(order = 1)
 	public void beforescenario(Scenario scenario) {
@@ -37,7 +42,7 @@ public class Myhooks extends Driverinstance{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://modelhubqa.xemplarinsights.com/login");
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
 
 		
 //		System.out.println(scenario.getName());

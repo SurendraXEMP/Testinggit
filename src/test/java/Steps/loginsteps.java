@@ -54,7 +54,7 @@
 //
 //	@Then("user should login into the portal")
 //	public void userShouldLoginIntoThePortal() {
-////		String text =  driver.findElement(By.xpath("//b[contains(text(), 'Surendra')]")).getText();
+//		String text =  driver.findElement(By.xpath("//b[contains(text(), 'Surendra')]")).getText();
 //		String text1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[contains(text(), 'Surendra')]")))
 //        .getText();
 //		System.out.println(text1);

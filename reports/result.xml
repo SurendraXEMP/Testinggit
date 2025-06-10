@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.176" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Dashboard screen" name="To test the model execution" time="36.924">
-<failure/>
+<testsuite name="Cucumber" time="37.442" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login screen" name="To test login form with positive case" time="7.37">
 <system-out><![CDATA[
-And Click on the batch scroing button.......................................undefined
-And Click on upload batch...................................................skipped
-And Upload the files........................................................skipped
-And click on submit button..................................................skipped
-And click on Ok button in success popup.....................................skipped
-And click on preprocess button..............................................skipped
-And click on ok  button in preprocess popup.................................skipped
-And click on validate button................................................skipped
-When click on ok button in validate popup...................................skipped
-Then Click on Quote model ready button......................................skipped
+Given user is entered the email id as "smoddipatla@xemplarinsights.com".....passed
+And user is entered the password as "Safety@123"............................passed
+When user clicks on the sign in button......................................passed
+Then user should login into the portal......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dashboard screen" name="To test the model execution" time="29.836">
+<system-out><![CDATA[
+And login into the portal...................................................passed
+And Click on the batch scroing button.......................................passed
+And Click on upload batch...................................................passed
+And Upload the files........................................................passed
+And click on submit button..................................................passed
+And click on Ok button in success popup.....................................passed
+And click on preprocess button..............................................passed
+And click on ok  button in preprocess popup.................................passed
+And click on validate button................................................passed
+When click on ok button in validate popup...................................passed
+Then Click on Quote model ready button......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
