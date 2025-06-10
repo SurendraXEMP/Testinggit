@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.442" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Login screen" name="To test login form with positive case" time="7.37">
+<testsuite name="Cucumber" time="25.415" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login screen" name="To test login form with positive case" time="8.699">
 <system-out><![CDATA[
 Given user is entered the email id as "smoddipatla@xemplarinsights.com".....passed
 And user is entered the password as "Safety@123"............................passed
@@ -8,7 +8,7 @@ When user clicks on the sign in button......................................pass
 Then user should login into the portal......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Dashboard screen" name="To test the model execution" time="29.836">
+<testcase classname="Dashboard screen" name="To test the model execution" time="16.485">
 <system-out><![CDATA[
 And login into the portal...................................................passed
 And Click on the batch scroing button.......................................passed
