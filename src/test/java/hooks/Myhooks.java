@@ -1,10 +1,6 @@
 package hooks;
-
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Base64;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,9 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.Driverinstance;
-
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -39,7 +32,7 @@ public class Myhooks extends Driverinstance{
 	public void beforescenario(Scenario scenario) {
 		
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
 		driver.get("https://modelhubqa.xemplarinsights.com/login");
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
