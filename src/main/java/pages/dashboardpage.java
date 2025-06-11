@@ -17,6 +17,7 @@ public class dashboardpage extends Driverinstance {
 	
 	@Given("login into the portal")
 	public void login_into_the_portal() {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.loading-spinner")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email"))).sendKeys("smoddipatla@xemplarinsights.com");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password"))).sendKeys("Safety@123");
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Sign In']"))).click();
