@@ -29,13 +29,15 @@ public class Myhooks extends Driverinstance{
 	}
 	
 	@Before(order = 1)
-	public void beforescenario(Scenario scenario) {
+	public void beforescenario(Scenario scenario) throws InterruptedException {
 		
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.get("https://modelhubqa.xemplarinsights.com/login");
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
+		Thread.sleep(50000);
 
 		
 //		System.out.println(scenario.getName());
