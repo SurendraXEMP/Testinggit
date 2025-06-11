@@ -32,7 +32,7 @@ public class Myhooks extends Driverinstance{
 	public void beforescenario(Scenario scenario) {
 		
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.get("https://modelhubqa.xemplarinsights.com/login");
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
@@ -60,6 +60,7 @@ public class Myhooks extends Driverinstance{
 	            System.out.println("Screenshot byte length: " + screenshot.length);
 	        } catch (Exception e) {
 	            System.out.println("Screenshot capture failed: " + e.getMessage());
+	            System.out.println("Page update");
 	            
 	        }
 	    }
