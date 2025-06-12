@@ -32,27 +32,13 @@ public class Myhooks extends Driverinstance{
 	@Before(order = 1)
 	public void beforescenario(Scenario scenario) throws InterruptedException {
 		
-//		driver = new ChromeDriver();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(150));
-//		driver.get("https://modelhubqa.xemplarinsights.com/login");
-//		driver.manage().window().maximize();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
-//		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
-
-	    ChromeOptions options = new ChromeOptions();
-	    options.addArguments("--headless"); // <- Headless for Jenkins
-	    options.addArguments("--no-sandbox");
-	    options.addArguments("--disable-dev-shm-usage");
-
-	    driver = new ChromeDriver(options);
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(150));
-	    driver.get("https://modelhubqa.xemplarinsights.com/login");
-	    driver.manage().window().maximize();
-	    wait = new WebDriverWait(driver, Duration.ofSeconds(45));
-	    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(300));
-		
-		
-		
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
+		driver.get("https://modelhubqa.xemplarinsights.com/login");
+		driver.manage().window().maximize();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(90));
+	
 		
 		
 //		System.out.println(scenario.getName());

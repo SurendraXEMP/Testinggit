@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
         
         
     },
-    glue = { "pages", "hooks" },  // Use package names only
+    glue = { "pages", "hooks" },
     plugin = {
         "pretty",
         "html:target/cucumber-report.html",
